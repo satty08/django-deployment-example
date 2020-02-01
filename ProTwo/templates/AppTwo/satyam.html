@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Satyam</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>Please sign up here</h1>
+        <form method="POST">
+                {{ form.as_p }}
+                {%csrf_token%}
+                <input type="submit" class="btn btn-primary" value="Submit">
+
+        </form>
+
+    </div>
+
+
+</body>
+</html>
+
+<!--{% if users %}-->
+        <!--<ol>-->
+            <!--{% for person in users %}-->
+            <!--<li>USER INFO:</li>-->
+                <!--<ul>-->
+                    <!--<li>FIRST NAME : {{person.fname}}</li>-->
+                    <!--<li>LAST NAME : {{person.lname}}</li>-->
+                    <!--<li>EMAIL : {{person.email}}</li>-->
+                <!--</ul>-->
+            <!--{% endfor %}-->
+        <!--</ol>-->
+    <!--{% endif %}-->
